@@ -17,7 +17,7 @@ http.createServer(function (req, res) {
             var requestInput = JSON.parse(jsonString);
 
             var responseObject = {
-                text: requestInput.text.replace(/[aeiou]/g, 'i'),
+                text: requestInput.text.replace(/[aeiou]/g, 'i') + ' http://i.imgur.com/LjEuB5q.jpg',
             }
 
             res.end(JSON.stringify(responseObject));
