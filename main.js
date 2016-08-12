@@ -13,7 +13,14 @@ http.createServer(function (req, res) {
 
         req.on('end', function () {
             console.log(JSON.parse(jsonString));
-            res.end('{"text": "dilci dilci"}');
+
+            var requestInput = JSON.parse(jsonString);
+
+            var responseObject = {
+                text: requestInput.text.replace(/[aeiou]/g, 'i'),
+            }
+
+            res.end(JSON.stringify(responseObject));
         });
     }
 
