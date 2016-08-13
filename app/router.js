@@ -13,6 +13,4 @@ app.post('/', (req, res) => {
     });
 });
 
-module.exports = () => {
-    app.listen(8080, '127.0.0.1', () => console.log('sweet-bot is running...'))
-}
+module.exports = app;
