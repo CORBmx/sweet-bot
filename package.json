@@ -2,7 +2,7 @@
   "name": "sweet-bot",
   "version": "1.0.0",
   "description": "A bot that does Dulce beter than her...",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CORBmx/sweet-bot/issues"
   },
-  "homepage": "https://github.com/CORBmx/sweet-bot#readme"
+  "homepage": "https://github.com/CORBmx/sweet-bot#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
