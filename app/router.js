@@ -10,7 +10,7 @@ app.post('/', (req, res) => {
 
     res.json( {
         username: 'Li Dilci',
-        icon_url: 'https://chat.corb.mx/api/v3/users/5n8yu6gytjgi7cjegjmejheq4o/image?time=1466011440913'
+        icon_url: 'https://chat.corb.mx/api/v3/users/5n8yu6gytjgi7cjegjmejheq4o/image?time=1466011440913',
         text:  `${dulcefiedText} http://i.imgur.com/LjEuB5q.jpg`,
     });
 });
