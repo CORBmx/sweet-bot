@@ -9,6 +9,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use('/ladulce', router);
+app.use(router);
 
 app.listen(8080, '127.0.0.1', () => console.log('sweet-bot is running...'))
