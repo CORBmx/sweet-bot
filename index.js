@@ -11,4 +11,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(router);
 
-app.listen(8080, '127.0.0.1', () => console.log('sweet-bot is running...'))
+app.listen(
+    process.env.PORT || 8080,
+    process.env.HOST || '0.0.0.0',
+    () => console.log('sweet-bot is running...')
+);
