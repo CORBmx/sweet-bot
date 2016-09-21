@@ -10,6 +10,9 @@ app.post('/', (req, res) => {
     console.log(`text: ${req.body.text}`);
 
     switch (dulcefiedText) {
+        case 'dulce cual es tu summoner id':
+            dulcefiedText = 'li dildi bit';
+            break;
         case 'dulce no te vayas :c':
             dulcefiedText = 'que te valga verga prro!';
             break;
