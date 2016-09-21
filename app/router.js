@@ -5,11 +5,15 @@ const express = require('express');
 const app = express();
 
 app.post('/', (req, res) => {
+    let dulcefiedText = dulcefiedText = req.body.text.toLowerCase();
+
     console.log(`text: ${req.body.text}`);
-    const dulcefiedText = req.body.text.replace('dulce ', '')
-        .toLowerCase()
-        .replace(/[aeiouaáéíóú]/g, 'i')
-        .replace('qii', 'ki');
+
+    if (dulcefiedText === 'dulce no te vayas :c') {
+        dulcefiedText = 'que te valga verga perro!';
+    } else {
+        dulcefiedText = dulcefiedText.replace(/[aeiouaáéíóú]/g, 'i').replace('qii', 'ki');
+    }
 
     res.json( {
         username: 'Li Dilci',
