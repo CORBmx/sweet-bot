@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 app.post('/', (req, res) => {
-    let dulcefiedText = dulcefiedText = req.body.text.toLowerCase();
+    let dulcefiedText = req.body.text.toLowerCase();
 
     console.log(`text: ${req.body.text}`);
 
