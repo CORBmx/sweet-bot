@@ -9,10 +9,12 @@ app.post('/', (req, res) => {
 
     console.log(`text: ${req.body.text}`);
 
-    if (dulcefiedText === 'dulce no te vayas :c') {
-        dulcefiedText = 'que te valga verga perro!';
-    } else {
-        dulcefiedText = dulcefiedText.replace(/[aeiouaáéíóú]/g, 'i').replace('qii', 'ki');
+    switch (dulcefiedText) {
+        case 'dulce no te vayas :c':
+            dulcefiedText = 'que te valga verga prro!';
+            break;
+        default:
+            dulcefiedText = dulcefiedText.replace(/[aeiouaáéíóú]/g, 'i').replace('qii', 'ki');
     }
 
     res.json( {
